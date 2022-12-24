@@ -1107,21 +1107,18 @@ background-position: center;
 border: 1px solid rgba(0, 0, 0, 0.1);
 border-radius: 50%;
  color: #000000;
- transition: background-color var(--animate), border var(--animate), color var(--animate);
 }
 
 .modal-icons {
 border-radius: 50%;
 color: #212121;
 transition: color var(--animate);
-
-outline: 1px solid green;
 }
 
 .modal-icons:hover,
 .modal-icons:focus {
   border-radius: 50%;
-  color: #2196F3;
+  fill: #2196F3;
 }
 
 .modal-heading {
@@ -1160,8 +1157,16 @@ line-height: 1.17;
 letter-spacing: 0.01em;
 
 color: #757575;
-transition: color var(--animate);
-} 
+transition: border var(--animate)
+}
+
+.modal-input-wrapper:required:focus,
+.modal-input-wrapper:required:hover {
+  outline: none;
+  border: 1px solid #2196F3;
+border-radius: 4px;
+fill: #2196F3;
+}
 
 .icons-wrapper{
   position: absolute;
@@ -1175,15 +1180,8 @@ transition: color var(--animate);
 
   color: #212121;
   transition: color var(--animate);
-  
-  background-color:  red;
   }
-  
-  .icons-wrapper:hover,
-  .icons-wrapper:focus {
-    fill: #2196F3;
-  }
-
+   
 .modal-input {
   width: 100%;
   height: 40px;
@@ -1192,9 +1190,7 @@ transition: color var(--animate);
 
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
-
 }
-
 
 .modal-input:required {
   outline: none;
@@ -1250,7 +1246,7 @@ transition: border var(--animate), color var(--animate);
 }
 
 .modal-text:hover,
-.modal-text:focus-within {
+.modal-text:focus {
   outline: none;
   border: 1px solid #2196F3;
   border-radius: 4px;
