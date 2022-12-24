@@ -440,20 +440,22 @@
             </li>
           </ul>
         </div>
+        <!--  Підпишіться на розсилку -->
         <div class="about-subscribe">
           <h3 class="text-items">Підпишіться на розсилку</h3>
-
+<div class="subscribe"> 
           <form>
-            <label><input type="email" class="email-user" name="email" value="E-mail"/>
+            <label><input type="email" class="email-user" name="email" placeholder="E-mail"/>
             </label>
                       
             <button type="submit" class="submit-items">
               <span class="submit-text">Підписатися</span> 
-              <svg class="icon-send" width="24" height="24">
+              <svg class="icon-submit" width="24" height="24">
                 <use href="./images/icons.svg#icon-icon-send"></use>
               </svg>
             </button>
           </form>
+        </div>
 
         </div>
         
@@ -474,26 +476,36 @@
         <form action="">
             <div class="modal-input-group">
               <label for="name"> Ім'я </label>
+
+              <div class="modal-input-wrapper">
                 <input type="text" class="modal-input" placeholder="" name="name" id="name" required autofocus >
-                <svg class="modal-icons" width="18" height="18">
+                <svg class="icons-wrapper" width="18" height="18">
                   <use href="./images/icons.svg#icon-person-black"></use>
                 </svg>
+              </div>
+
             </div>
 
               <div class="modal-input-group">
                 <label for="tel"> Телефон </label>
+
+                <div class="modal-input-wrapper">
                   <input type="tel" class="modal-input" placeholder="" name="tel" title="" value=""  id="tel" required pattern="[+]\d{3}\s[(]\d{2}[)]\s\d{3}[-]\d{2}[-]\d{2}">
-                  <svg class="modal-icons" width="18" height="18">
+                  <svg class="icons-wrapper" width="18" height="18">
                     <use href="./images/icons.svg#icon-phone-black"></use>
                   </svg>
+                </div>
                 </div>
 
                 <div class="modal-input-group">
                   <label for="email"> Пошта </label>
+
+                  <div class="modal-input-wrapper">
                     <input type="email" class="modal-input" name="email" id="user-email" required>
-                    <svg class="modal-icons" width="18" height="18">
+                    <svg class="icons-wrapper" width="18" height="18">
                       <use href="./images/icons.svg#icon-email-black"></use>
                     </svg>
+                  </div>
                   </div>
 
                   <div class="modal-input-group">
@@ -504,7 +516,9 @@
 
         <fieldset class="agree">
           <input type="checkbox" name="agree" id="accept" value="" >
-          <label for="accept">Погоджуюся з розсилкою та приймаю <span class="agree-text">Умови договору</span></label>
+          <label for="accept">Погоджуюся з розсилкою та приймаю 
+            <span class="agree-text">Умови договору</span>
+          </label>
         </fieldset>
 <button type="submit" class="button-submit">
   <span class="button-submit-name">Відправити</span>
