@@ -671,7 +671,13 @@ footer > .container {
 }
 
 .about-company {
-  margin-right: 70px;
+  margin-top: 20px;
+  /* margin-right: 70px; */
+}
+.about-company,
+.about-icons,
+.about-subscribe {
+  margin-left: auto;
 }
 
 .logo-footer {
@@ -689,10 +695,6 @@ footer > .container {
 
 .logo-item {
   color: var(--pramyre-text-color);
-}
-
-.about-company {
-  margin-top: 20px;
 }
 
 .address-company {
@@ -737,7 +739,6 @@ footer > .container {
 }
 
 /* --- FOOTER soc-link --- */
-
 .text-items {
   margin-bottom: 20px;
 
@@ -783,10 +784,18 @@ footer > .container {
 
 /* --- Підпишіться на розсилку v FOOTER --- */
 
-.about-subscribe {
+/*.about-subscribe {
   margin-left: 93px;
-  width: 570px;
- }
+} */
+
+.subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin: 0;
+  padding: 0;
+}
 
  .submit-list {
   display: flex;
@@ -795,10 +804,10 @@ footer > .container {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  
   margin: 0;
   padding: 0;
  }
-
 
 .email-user {
   display: inline-block;
@@ -809,7 +818,7 @@ footer > .container {
     padding-bottom: 15px;
     padding-left: 16px;
     
-    width: 358px;
+    width: 310px;
 
 border: 1px solid rgba(255, 255, 255, 0.3);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -829,8 +838,6 @@ background-color: #2F303A;
   padding-left: 28px;
   margin-left: 12px;
 
-  width: 200px;
-    
   background-color: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -841,8 +848,6 @@ background-color: #2F303A;
 display: flex;
 align-items: center;
 text-align: center;
-
-margin-right: 10px; 
 
 font-family: 'Roboto';
 font-style: normal;
@@ -855,6 +860,8 @@ color: #FFFFFF;
 }
 
 .icon-submit {
+  margin-left: 10px; 
+
   fill: #FFFFFF;
   background-color: #2196F3;
 }
@@ -1131,12 +1138,7 @@ color: #212121;
   width: 448px;
   margin-bottom: 20px;
 } 
-
-.modal-input-wrapper {
-  position: relative;
-
-  margin-top: 4px;
-
+.modal-input-items {
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
@@ -1145,6 +1147,14 @@ line-height: 1.17;
 letter-spacing: 0.01em;
 
 color: #757575;
+}
+
+.modal-input-wrapper {
+  position: relative;
+
+margin-top: 4px;
+margin-bottom: 10px;
+
 transition: border var(--animate)
 
 }
@@ -1160,6 +1170,7 @@ transition: border var(--animate)
   margin-right: 12px;
 
   color: #212121;
+  border: none;
   transition: color var(--animate);
   }
    
@@ -1172,10 +1183,11 @@ transition: border var(--animate)
 
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
+transition: border var(--animate);
 }
 
-.modal-input:hover+svg,
-.modal-input:focus+svg {
+.modal-input:hover,
+.modal-input:focus {
   outline: none;
   border: 1px solid #2196F3;
 border-radius: 4px;
@@ -1202,10 +1214,6 @@ border-radius: 4px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: #757575;
-}
-
-.modal-input-group {
-  margin-bottom: 10px;
 }
 
 /* --- КОМЕНТАР В МОДАЛЬНОМУ ВІКНІ --- */
@@ -1257,10 +1265,13 @@ color: rgba(117, 117, 117, 0.5);
 /* --- РАДІОКНОПКА В МОДАЛЬНОМУ ВІКНІ --- */
 
 .agree {
-width: 100%;
-
-margin-left: 16px;
+  Width: 425px;
+  margin-left: auto;
+  margin-right: auto;
 margin-bottom: 30px;
+
+display: flex;
+align-items: center;
 
 font-family: 'Roboto';
 font-style: normal;
@@ -1270,28 +1281,49 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 
 color: #757575;
-
-border: var(--pramyre-text-color);
+border: none;
 }
 
-.checkbox:checked+.icon-check {
-  background-color: url(../images/icons.svg#icon-check);
-  outline: none;
+label.modal-politic-label {
+  display: flex;
+  align-items: center;
+}
+
+.modal-politic-check {
+  border-color: #212121;
+  border-radius: 2px;
   background-size: contain;
   background-origin: border-box;
-  border-color: transparent;
 }
 
-.agree-text {
+.modal-politic-check:checked+.modal-politic-label::before {
+  border: none;
+  background-image: url(../images/icons.svg#icon-check);
+background-repeat: no-repeat;
+background-position: center;
+  background-size: contain;
+  background-origin: border-box;
+  border-radius: 2px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.modal-politic-label::before {
+  content: "";
+  width: 16px;
+  height: 15px;
+  border-color: #212121;
+  border-radius: 2px;
+
+  display: block;
+  margin-left: 8px;
+}
+
+.modal-politic-text {
+  margin-left: 4px;
   text-decoration-line: underline;
   color: #2196F3;
 }
-
-.agree-text {
-text-decoration-line: underline;
-color: #2196F3;
-}
-
 
 /* --- КНОПКА МОДАЛЬНОГО ВІКНА - "ВІДПРАВИТИ" --- */
 
