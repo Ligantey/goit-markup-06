@@ -1149,14 +1149,6 @@ transition: border var(--animate)
 
 }
 
-.modal-input-wrapper:required:focus,
-.modal-input-wrapper:required:hover {
-  outline: none;
-  border: 1px solid #2196F3;
-border-radius: 4px;
-fill: #2196F3;
-}
-
 .icons-wrapper {
   position: absolute;
 
@@ -1171,9 +1163,6 @@ fill: #2196F3;
   transition: color var(--animate);
   }
    
-.icons-wrapper {
-  fill: var(--hover-color);
-}
 
 .modal-input {
   width: 100%;
@@ -1185,10 +1174,17 @@ border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 }
 
-.modal-input:required {
+.modal-input:hover+svg,
+.modal-input:focus+svg {
   outline: none;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid #2196F3;
 border-radius: 4px;
+}
+
+.modal-input:hover+svg,
+.modal-input:focus+svg {
+  outline: transparent;
+  fill: var(--hover-color);
 }
 
 .modal-input:required:focus,
@@ -1196,7 +1192,6 @@ border-radius: 4px;
   outline: none;
   border: 1px solid #2196F3;
 border-radius: 4px;
-fill: var(--hover-color);
 }
 
 .modal-input-group::placeholder {
