@@ -781,49 +781,56 @@ footer > .container {
 }
 
 
-/* --- Підпишіться на розсилку --- */
+/* --- Підпишіться на розсилку v FOOTER --- */
 
 .about-subscribe {
   margin-left: 93px;
-}
+  width: 570px;
+ }
 
-.subscribe {
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-}
-
-.email-user {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 16px;
-
-    width: 358px;
-
-border: 1px solid rgba(255, 255, 255, 0.3);
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: 4px;
-
-}
-
-.submit-items {
+ .submit-list {
   display: flex;
   justify-content: center;
   align-items: center;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  margin: 0;
+  padding: 0;
+ }
 
+
+.email-user {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    
+    width: 358px;
+
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+background-color: #2F303A;
+}
+
+.submit-items {
+  /* кнопка */
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-right: 28px;
+  padding-left: 28px;
   margin-left: 12px;
 
   width: 200px;
-  height: 50px;
     
-  
   background-color: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -835,8 +842,7 @@ display: flex;
 align-items: center;
 text-align: center;
 
-margin-left: 28px;
-margin-right: 10px;
+margin-right: 10px; 
 
 font-family: 'Roboto';
 font-style: normal;
@@ -845,36 +851,13 @@ font-size: 16px;
 line-height: 1.88;
 
 letter-spacing: 0.06em;
-
 color: #FFFFFF;
 }
 
 .icon-submit {
-  /* прописуємо у % щоб займало весь контейнер
-  width: 100%;
-  height: 100%; */
-
-  color: #FFFFFF;
+  fill: #FFFFFF;
   background-color: #2196F3;
-outline: 1px solid green;
 }
- /*
- 
-
-  background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color var(--animate), filter var(--animate), color var(--animate);
-}
-
-.icons-link:hover,
-.icons-link:focus {
-  background-color: var(--hover-color);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  border-radius: 50%;
-}
-
-.soc-icons {
-  fill: var(--pramyre-text-color);
-}*/
 
 /* --- css style portfolio.html --- */
 
@@ -1107,17 +1090,22 @@ background-position: center;
 border: 1px solid rgba(0, 0, 0, 0.1);
 border-radius: 50%;
  color: #000000;
+ transform: border-radius var(--animate);
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  border-radius: 50%;
 }
 
 .modal-icons {
-border-radius: 50%;
+
 color: #212121;
 transition: color var(--animate);
 }
 
 .modal-icons:hover,
 .modal-icons:focus {
-  border-radius: 50%;
   fill: #2196F3;
 }
 
@@ -1203,6 +1191,7 @@ border-radius: 4px;
   outline: none;
   border: 1px solid #2196F3;
 border-radius: 4px;
+fill: var(--hover-color);
 }
 
 .modal-input-group::placeholder {
@@ -1224,6 +1213,7 @@ border-radius: 4px;
   width: 100%;
   height: 120px;
   
+  margin-top: 4px;
   padding-top: 12px;
   padding-right: 16px;
   padding-bottom: 12px;
