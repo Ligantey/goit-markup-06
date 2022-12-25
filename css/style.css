@@ -1146,6 +1146,7 @@ letter-spacing: 0.01em;
 
 color: #757575;
 transition: border var(--animate)
+
 }
 
 .modal-input-wrapper:required:focus,
@@ -1156,7 +1157,7 @@ border-radius: 4px;
 fill: #2196F3;
 }
 
-.icons-wrapper{
+.icons-wrapper {
   position: absolute;
 
   top: 50%;
@@ -1170,6 +1171,10 @@ fill: #2196F3;
   transition: color var(--animate);
   }
    
+.icons-wrapper {
+  fill: var(--hover-color);
+}
+
 .modal-input {
   width: 100%;
   height: 40px;
