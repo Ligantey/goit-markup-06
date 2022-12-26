@@ -1313,13 +1313,9 @@ label.modal-politic-label {
   background-image: url(../images/icons.svg#icon-check);
   background-repeat: no-repeat;
   background-position: center;
-
-  border-radius: 2px;
   background-color: var(--hover-color);
-
-  fill: #ffffff;
+  border-radius: 2px;
   cursor: pointer;
-  transition: background-color var(--animate);
 }
 
 .modal-politic-text {
