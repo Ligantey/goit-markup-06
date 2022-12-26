@@ -1317,8 +1317,9 @@ label.modal-politic-label {
   border-radius: 2px;
   background-color: var(--hover-color);
 
-  color: #ffffff;
+  fill: #ffffff;
   cursor: pointer;
+  transition: background-color var(--animate);
 }
 
 .modal-politic-text {
