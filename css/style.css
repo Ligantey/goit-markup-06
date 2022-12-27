@@ -1290,33 +1290,37 @@ label.modal-politic-label {
   align-items: center;
 }
 
-.modal-politic-check + .modal-politic-label::before {
+.modal-politic-check2 {
   width: 16px;
   height: 15px;
   border: 1px solid #212121;
   border-radius: 2px;
   margin-right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*
+.modal-politic-check:checked {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+*/
+.modal-politic-check2 svg {
+  fill: transparent;
 }
 
-.modal-politic-label::before {
-  content: '';
-  width: 16px;
-  height: 15px;
-  border: 1px solid #212121;
-  border-radius: 2px;
 
-  display: block;
-}
-
-.modal-politic-check:checked + .modal-politic-label::before {
+.modal-politic-check:checked + .modal-politic-label > span {
   border: none;
-  background-image: url(../images/symbol-defs.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 2px;
-  cursor: pointer;
-  color: #ffffff;
-  border: 0.2px solid #ffffff;
+  background-color: var(--hover-color);
+} 
+
+.modal-politic-check:checked + .modal-politic-label > span svg {
+fill: #FFFFFF;
+border: 0.2px solid #FFFFFF;
 }
 
 .modal-politic-text {
