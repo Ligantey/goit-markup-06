@@ -1310,11 +1310,13 @@ label.modal-politic-label {
 
 .modal-politic-check:checked + .modal-politic-label::before {
   border: none;
-  background-image: url(../images/icons.svg#icon-check);
+  background-image: url(../images/symbol-defs.svg);
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 2px;
   cursor: pointer;
+  color: #ffffff;
+  border: 0.2px solid #ffffff;
 }
 
 .modal-politic-text {
