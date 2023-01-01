@@ -1,0 +1,18 @@
+/* --- @extend %flex-align; --- */
+%flex-align {
+  display: flex;
+  align-items: center;
+}
+
+/* --- @extend %flex-align-justify; --- */
+%flex-align-justify {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- @extend %flex-justify; --- */
+%flex-justify {
+  display: flex;
+  justify-content: center;
+}

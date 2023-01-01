@@ -20,38 +20,39 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <!--<link rel="stylesheet" href="./css/style.css" /> --->
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header-container">
       <div class="container">
-        <nav class="page">
-          <ul class="logo-nav">
+        <nav class="navigation">
+          <ul class="navigation__logo">
             <li>
-              <a class="logo" href="WebStudio" lang="en">
-                <span class="logo-web">Web</span>
-                <span class="logo-studio">Studio</span>
+              <a class="navigation__logo__title" href="WebStudio" lang="en">
+                <span class="navigation__logo__web">Web</span>
+                <span class="navigation__logo__studio">Studio</span>
               </a>
             </li>
           </ul>
 
-          <ul class="site-nav">
-            <li><a href="Студія" class="site-nav-item link current">Студія</a></li>
-            <li><a href="./portfolio.html" class="site-nav-item link">Портфоліо</a></li>
-            <li><a href="Контакти" class="site-nav-item link">Контакти</a></li>
+          <ul class="navigation__site-nav">
+            <li><a href="Студія" class="navigation__site-nav__item link current">Студія</a></li>
+            <li><a href="./portfolio.html" class="navigation__site-nav__item link">Портфоліо</a></li>
+            <li><a href="Контакти" class="navigation__site-nav__item link">Контакти</a></li>
           </ul>
-          <ul class="auth-nav">
-            <li class="auth-nav-item">
-              <a href="mailto:info@devstudio.com" class="mail mail-item">
-                <svg class="envelope" width="16" height="12">
+          <ul class="navigation__auth-nav">
+            <li class="navigation__auth-nav__item">
+              <a href="mailto:info@devstudio.com" class="navigation__auth-nav__mail">
+                <svg class="navigation__auth-nav__envelope" width="16" height="12">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com
               </a>
             </li>
-            <li class="auth-nav-item">
-              <a href="tel:+380961111111" class="phone phone-item">
-                <svg class="smartphone" width="10" height="16">
+            <li class="navigation__auth-nav__item">
+              <a href="tel:+380961111111" class="navigation__auth-nav__phone">
+                <svg class="navigation__auth-nav__smartphone" width="10" height="16">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
                 +38 096 111 11 11
@@ -64,7 +65,7 @@
     <main>
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button
             type="button"
             class="button modal-open"
@@ -72,56 +73,56 @@
             name="button"
             style="width: 216px; height: 50px"
           >
-            <span class="button-name">Замовити послугу</span>
+            <span class="button__name">Замовити послугу</span>
           </button>
         </div>
       </section>
-      <section class="sub">
+      <section class="rarity">
         <div class="container">
           <h2 class="visually-hidden"></h2>
-          <ul class="sub-container">
-            <li class="sub-list">
-              <div class="title-icon">
+          <ul class="rarity__container">
+            <li class="rarity__list">
+              <div class="rarity__list__title-icon">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
 
-              <h3 class="subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="subtitle-text">
+              <h3 class="rarity__list__subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="rarity__list__subtitle-text">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
-            <li class="sub-list">
-              <div class="title-icon">
+            <li class="rarity__list">
+              <div class="rarity__list__title-icon">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="subtitle-text">
+              <h3 class="rarity__list__subtitle">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="rarity__list__subtitle-text">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
-            <li class="sub-list">
-              <div class="title-icon">
+            <li class="rarity__list">
+              <div class="rarity__list__title-icon">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">ПЛАНУВАННЯ</h3>
-              <p class="subtitle-text">
+              <h3 class="rarity__list__subtitle">ПЛАНУВАННЯ</h3>
+              <p class="rarity__list__subtitle-text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="sub-list">
-              <div class="title-icon">
+            <li class="rarity__list">
+              <div class="rarity__list__title-icon">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="subtitle-text">
+              <h3 class="rarity__list__subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="rarity__list__subtitle-text">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
             </li>
@@ -130,66 +131,66 @@
       </section>
       <section class="subject">
         <div class="container">
-          <h2 class="caption">Чим ми займаємося</h2>
-          <ul class="subject-img">
-            <li class="subject-item">
+          <h2 class="subject__caption">Чим ми займаємося</h2>
+          <ul class="subject__img">
+            <li class="subject__item">
               <img src="./images/img1.jpg" alt="робочий_стіл" width="370" height="294" />
-              <p class="subject-link">Десктопні додатки</p>
+              <p class="subject__link">Десктопні додатки</p>
             </li>
-            <li class="subject-item">
+            <li class="subject__item">
               <img src="./images/img2.jpg" alt="ноутбук" width="370" height="294" />
-              <p class="subject-link">Мобільні додатки</p>
+              <p class="subject__link">Мобільні додатки</p>
             </li>
-            <li class="subject-item">
+            <li class="subject__item">
               <img src="./images/img3.jpg" alt="планшет" width="370" height="294" />
-              <p class="subject-link">Дизайнерські рішення</p>
+              <p class="subject__link">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
       </section>
       <section class="team">
         <div class="container">
-          <h2 class="caption-team">Наша команда</h2>
-          <ul class="subject-images">
-            <li class="worker">
-              <article class="worker-card">
-                <div class="team-text">
+          <h2 class="team__title">Наша команда</h2>
+          <ul class="team__img">
+            <li class="team__img__worker">
+              <article class="team__img__worker-card">
+                <div class="team__img__team-text">
                   <img
                     src="./images/img_product_designer.jpg"
                     alt="фото_продакт_десіжн"
                     width="270"
                     height="260"
                   />
-                  <div class="team-text">
-                    <h3 class="text">Ігор Дем'яненко</h3>
-                    <p class="text-job" lang="en">Product Designer</p>
+                  <div class="team__img__team-text">
+                    <h3 class="team__img__text">Ігор Дем'яненко</h3>
+                    <p class="team__img__text-job" lang="en">Product Designer</p>
 
-                    <ul class="studio-soc-list list">
-                      <li class="studio-soc-items">
-                        <a href="#" class="studio-soc-link link">
-                          <svg class="studio-soc-icons" width="20" height="20">
+                    <ul class="studio-soc list">
+                      <li class="studio-soc__items">
+                        <a href="#" class="studio-soc__link link">
+                          <svg class="studio-soc__link__icons" width="20" height="20">
                             <use href="./images/icons.svg#icon-instagram"></use>
                           </svg>
                         </a>
                       </li>
 
-                      <li class="studio-soc-items">
-                        <a href="#" class="studio-soc-link link">
-                          <svg class="studio-soc-icons" width="20" height="20">
+                      <li class="studio-soc__items">
+                        <a href="#" class="studio-soc__link link">
+                          <svg class="studio-soc__link__icons" width="20" height="20">
                             <use href="./images/icons.svg#icon-twitter"></use>
                           </svg>
                         </a>
                       </li>
-                      <li class="studio-soc-items">
-                        <a href="#" class="studio-soc-link link">
-                          <svg class="studio-soc-icons" width="20" height="20">
+                      <li class="studio-soc__items">
+                        <a href="#" class="studio-soc__link link">
+                          <svg class="studio-soc__link__icons" width="20" height="20">
                             <use href="./images/icons.svg#icon-facebook"></use>
                           </svg>
                         </a>
                       </li>
-                      <li class="studio-soc-items">
-                        <a href="#" class="studio-soc-link link">
-                          <svg class="studio-soc-icons" width="20" height="20">
+                      <li class="studio-soc__items">
+                        <a href="#" class="studio-soc__link link">
+                          <svg class="studio-soc__link__icons" width="20" height="20">
                             <use href="./images/icons.svg#icon-linkedin"></use>
                           </svg>
                         </a>
@@ -548,17 +549,16 @@
                 name="politic"
                 id="politic"
                 value=""
-                required 
+                required
               />
-              <label for="politic" class="modal-politic-label"
-                >
+              <label for="politic" class="modal-politic-label">
                 <span class="modal-politic-check2">
                   <svg width="16" height="15">
                     <use href="./images/icons.svg#icon-check"></use>
                   </svg>
                 </span>
                 Погоджуюся з розсилкою та приймаю
-                <p class="modal-politic-text"> Умови договору</p>
+                <p class="modal-politic-text">Умови договору</p>
               </label>
             </div>
             <button type="submit" class="button-submit">

@@ -1,0 +1,47 @@
+.rarity {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container .rarity__container {
+  @extend %flex-align-justify;
+  flex-wrap: wrap;
+
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.rarity__list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.rarity__list__title-icon {
+  @extend %flex-align-justify;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.rarity__list__subtitle {
+  width: 270px;
+
+  @include font(700, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+.rarity__list__subtitle-text {
+  width: 270px;
+
+  @include font(null, 14px, 1.71, 0.03em);
+}

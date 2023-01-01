@@ -1,0 +1,87 @@
+.team {
+  margin-left: auto;
+  margin-right: auto;
+
+  background: #f5f4fa;
+
+  & > .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.team__title {
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  @include font(700, 36px, 1.17, 0.03em);
+  text-align: center;
+  color: var(--accent-color);
+}
+
+.team__img {
+  @extend %flex-align;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.team__img__worker {
+  width: 270px;
+  background: var(--pramyre-text-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.team__img__worker-card {
+  width: 270px;
+
+  @include font(700, 36px, 1.16, 0.03em);
+  text-align: center;
+  color: var(--accent-color);
+}
+
+.team__img__team-text {
+  display: inline-block;
+  justify-content: center;
+
+  & > img {
+    width: 270px;
+    height: 260px;
+    border-radius: 0px;
+  }
+}
+
+.team__img__text {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  @include font(700, 16px, 1.19, 0.03em);
+  text-align: center;
+  color: var(--accent-color);
+}
+
+.team__img__text-job {
+  margin-bottom: 16px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  @include font(400, 16px, 1.19, 0.03em);
+  text-align: center;
+  color: var(--title-text-color);
+}

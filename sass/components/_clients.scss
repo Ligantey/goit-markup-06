@@ -1,0 +1,40 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.client-list {
+  @extend %flex-align-justify;
+}
+
+.client-item {
+  width: 170px;
+  height: 92px;
+  box-sizing: border-box;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.client-link {
+  @extend %flex-align-justify;
+  /*  прописуємо у % щоб займало весь контейнер  */
+  width: 100%;
+  height: 100%;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: color var(--animate), border var(--animate);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--hover-color);
+    border-radius: 4px;
+    fill: var(--hover-color);
+  }
+}

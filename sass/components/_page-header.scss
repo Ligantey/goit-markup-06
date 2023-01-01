@@ -1,0 +1,148 @@
+
+header {
+  margin: auto;
+  background-color: var(--pramyre-text-color);
+  border-bottom: 1px solid #ececec;
+}
+
+.navigation {
+  @extend %flex-align-justify;
+  text-align: center;
+}
+
+.navigation__logo {
+  margin-right: 93px;
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
+
+.navigation__logo__title {
+  display: inline-flex;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  @include font(700, 26px, 1.19, 0.03em);
+
+  & > div {
+    cursor: pointer;
+  }
+}
+
+.navigation__logo__web {
+  color: var(--hover-color);
+}
+
+.navigation__logo__studio {
+  color: #000000;
+}
+
+.navigation__site-nav {
+  @extend %flex-align;
+  & a {
+    color: var(--accent-color);
+  }
+  & > li {
+    cursor: pointer;
+  }
+}
+
+/* --- site-nav --- */
+.navigation__site-nav > li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.link:hover,
+.link:focus,
+.link.current {
+  color: var(--hover-color);
+  border-radius: 2px;
+}
+
+.link {
+  transition: transform var(--animate), color var(--animate);
+}
+
+.navigation__site-nav__item {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 48px;
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+
+.current::after {
+  content: '';
+  position: absolute;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-top: 28px;
+
+  bottom: 0;
+  left: 0;
+  background: #2196f3;
+  border-radius: 2px;
+}
+
+.current:hover::after {
+  opacity: 1;
+  transition: transform var(--animate);
+}
+
+/* --- auth-nav --- */
+.link,
+.navigation__auth-nav {
+  @include font(500, 14px, 1.14, 0.02em);
+  color: var(--accent-color);
+}
+
+.navigation__auth-nav {
+  @extend %flex-justify;
+  margin-left: auto;
+  align-items: baseline;
+  & > li:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.navigation__auth-nav__item {
+  @extend %flex-justify;
+  align-items: baseline;
+}
+
+.navigation__auth-nav__envelope {
+  margin-right: 10px;
+  cursor: pointer;
+  transition: color var(--animate);
+}
+
+.navigation__auth-nav__mail{
+  fill: var(--title-text-color);
+  color: var(--title-text-color);
+  transition: color var(--animate);
+  &:hover,
+  &:focus {
+    color: var(--hover-color);
+    fill: var(--hover-color);
+  }
+}
+
+.navigation__auth-nav__smartphone {
+  margin-right: 10px;
+  cursor: pointer;
+  transition: color var(--animate);
+}
+
+.navigation__auth-nav__phone {
+  fill: var(--title-text-color);
+  color: var(--title-text-color);
+  transition: color var(--animate);
+  &:hover,
+  &:focus {
+    color: var(--hover-color);
+    fill: var(--hover-color);
+  }
+}
+
